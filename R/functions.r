@@ -20,6 +20,6 @@ extract.participant <- function(id) {
 #' @export
 my_write_table <- function(x, filename) {
   cat("saving", basename(filename), "...\n")
-  write.table(x, file = filename, row.names = T, col.names = T, sep = "\t")
+  utils::write.table(x, file = filename, row.names = T, col.names = T, sep = "\t")
   print("hello")
 }
